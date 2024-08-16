@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db: 
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: shady
+      POSTGRES_PASSWORD: shady123
+      POSTGRES_DB: shadydb
+    ports:
+      - 5499:5432
